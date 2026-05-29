@@ -96,7 +96,6 @@ The system generates personalized travel itineraries based on destination, budge
 
 ## 🧠 How It Works
 
-```text
 User Inputs
 (Source, Destination, Budget, Days, Travel Type)
             ↓
@@ -134,7 +133,6 @@ PDF Travel Plan Export
 
 ## 📂 Project Structure
 
-```
 AI-TRAVEL-AGENT/
 
 │
@@ -153,19 +151,15 @@ AI-TRAVEL-AGENT/
 │   ├── hotels.json
 │   └── places.json
 │
-├── images/
-│   ├── goa1.webp
-│   ├── mumbai1.webp
-│   ├── delhi1.webp
-│   ├── kerala1.jpeg
-│   ├── kashmir1.webp
-│   └── ...
+├──images/
+│    ├── all destination images
+|
 │
 ├── app.py
 ├── pdf_generator.py
 ├── requirements.txt
 └── README.md
-```
+
 
 ---
 
@@ -173,55 +167,43 @@ AI-TRAVEL-AGENT/
 
 ### Clone Repository
 
-```bash
 git clone https://github.com/yourusername/ai-travel-planner.git
 
 cd ai-travel-planner
-```
+
 
 ### Create Virtual Environment
 
-```bash
 python -m venv venv
-```
 
 ### Activate Environment
 
 Mac/Linux:
 
-```bash
 source venv/bin/activate
-```
 
 Windows:
 
-```bash
 venv\Scripts\activate
-```
 
 ### Install Dependencies
 
-```bash
 pip install -r requirements.txt
-```
 
 ---
 
 ## 🔑 API Setup
 
-Create a `.env` file:
+Create a ".env" file:
 
-```env
 GROQ_API_KEY=your_groq_api_key
-```
+
 
 ---
 
 ## ▶️ Run Application
 
-```bash
 streamlit run app.py
-```
 
 ---
 
