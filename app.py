@@ -18,8 +18,6 @@ st.set_page_config(
     layout="wide"
 )
 
-st.write("App started successfully")
-
 # ---------------- SESSION STATE ---------------- #
 
 if "generated" not in st.session_state:
