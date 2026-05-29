@@ -10,7 +10,7 @@ from tools.food_tool import get_food_recommendations
 # ---------------- GROQ CLIENT ---------------- #
 
 client = Groq(
-    api_key="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"
+    api_key="YOUR API KEY"
 )
 
 
