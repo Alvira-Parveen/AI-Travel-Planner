@@ -10,6 +10,11 @@ The system generates personalized travel itineraries based on destination, budge
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
+
+🌐 **Live Demo:** [ai-travel-planner-16.streamlit.app]([https://ai-travel-planner-16.streamlit.app])
+
+--- 
+
 ## 📸 Screenshots
 
 ### Home Page
