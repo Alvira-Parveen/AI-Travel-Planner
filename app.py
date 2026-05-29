@@ -1,4 +1,6 @@
 import streamlit as st
+st.write("App started successfully")
+
 from PIL import Image
 import glob
 import folium
