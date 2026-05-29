@@ -11,7 +11,7 @@ The system generates personalized travel itineraries based on destination, budge
 
 ---
 
-🌐 **Live Demo:** [ai-travel-planner-16.streamlit.app]([https://ai-travel-planner-16.streamlit.app])
+🌐 **Live Demo:** [ai-travel-planner-16.streamlit.app](https://ai-travel-planner-16.streamlit.app)
 
 --- 
 
