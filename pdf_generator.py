@@ -6,7 +6,6 @@ def clean_text(text):
     if text is None:
         return ""
 
-    # ensure we are working with a string
     text = str(text)
 
     replacements = {
@@ -21,16 +20,27 @@ def clean_text(text):
         "💰": "",
         "🧠": "",
         "🌤️": "",
-        "📄": ""
+        "📄": "",
+        "❤️": "",
+        "⭐": "",
+        "🌄": "",
+        "🍽️": "",
+        "🏨": "",
+        "🚕": "",
+        "🎒": "",
+        "🎯": "",
+        "•": "-",
+        "—": "-",
+        "–": "-"
     }
 
     for old, new in replacements.items():
         text = text.replace(old, new)
 
-    # Remove any remaining characters that cannot be encoded in latin-1
-    filtered = ''.join(ch for ch in text if ord(ch) < 256)
+    # Keep only latin-1 compatible chars
+    text = text.encode("latin-1", "replace").decode("latin-1")
 
-    return filtered
+    return text
 
 
 def create_pdf(travel_content):
@@ -43,13 +53,26 @@ def create_pdf(travel_content):
 
     pdf.set_font("Arial", size=12)
 
-    # Clean unsupported characters
     cleaned_content = clean_text(travel_content)
 
     lines = cleaned_content.split("\n")
 
     for line in lines:
 
-        pdf.multi_cell(0, 10, line)
+        line = line.strip()
+
+        if not line:
+            pdf.ln(3)
+            continue
+
+        try:
+            pdf.multi_cell(
+                0,
+                8,
+                line
+            )
+
+        except Exception:
+            continue
 
     pdf.output("AI_Travel_Plan.pdf")
