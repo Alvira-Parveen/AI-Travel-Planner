@@ -7,3 +7,4 @@ folium==0.19.6
 streamlit-folium==0.25.0
 fpdf2==2.8.3
 python-dotenv==1.1.0
+Pillow==11.2.1
