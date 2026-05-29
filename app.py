@@ -1,5 +1,4 @@
 import streamlit as st
-st.write("App started successfully")
 
 from PIL import Image
 import glob
@@ -19,6 +18,7 @@ st.set_page_config(
     layout="wide"
 )
 
+st.write("App started successfully")
 
 # ---------------- SESSION STATE ---------------- #
 
