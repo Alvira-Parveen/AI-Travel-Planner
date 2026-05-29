@@ -287,12 +287,14 @@ if st.session_state.generated:
 
                         st.image(
                             image,
-                            width='stretch'
+                            use_container_width=True
                         )
 
-                except:
+                except Exception as e:
 
-                    pass
+                    st.error(
+                        f"Image Error: {e}"
+                    )
 
     # ---------------- TAB 3 ---------------- #
 
