@@ -138,8 +138,8 @@ PDF Travel Plan Export
 
 ## 📂 Project Structure
 
-AI-TRAVEL-AGENT/
 ```text
+AI-TRAVEL-AGENT/
 │
 ├── agent/
 │   └── travel_agent.py ← The AI Agent (orchestrator)
