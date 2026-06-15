@@ -139,10 +139,10 @@ PDF Travel Plan Export
 ## 📂 Project Structure
 
 AI-TRAVEL-AGENT/
-
+'''
 │
 ├── agent/
-│   └── travel_agent.py
+│   └── travel_agent.py ← The AI Agent (orchestrator)
 │
 ├── tools/
 │   ├── flight_tool.py
@@ -164,7 +164,7 @@ AI-TRAVEL-AGENT/
 ├── pdf_generator.py
 ├── requirements.txt
 └── README.md
-
+'''
 
 ---
 
