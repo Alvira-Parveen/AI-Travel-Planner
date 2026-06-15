@@ -142,26 +142,26 @@ PDF Travel Plan Export
 AI-TRAVEL-AGENT/
 │
 ├── agent/
-│   └── travel_agent.py ← The AI Agent (orchestrator)
+│   └── travel_agent.py  ← The AI Agent (orchestrator)
 │
 ├── tools/
-│   ├── flight_tool.py
-│   ├── hotel_tool.py
-│   ├── places_tool.py
-│   ├── weather_tool.py
-│   └── food_tool.py
+│   ├── flight_tool.py   ← Tool 1: Flight Search Engine
+│   ├── hotel_tool.py    ← Tool 2: Hotel Recommendation Engine
+│   ├── places_tool.py   ← Tool 3: Tourist Attractions Engine
+│   ├── weather_tool.py  ← Tool 4: Live Weather API (Open-Meteo)
+│   └── food_tool.py     ← Tool 5: Food Recommendation Engine
 │
 ├── data/
-│   ├── flights.json
-│   ├── hotels.json
-│   └── places.json
+│   ├── flights.json     ← Flight database (107 routes)
+│   ├── hotels.json      ← Hotel database (40+ properties)
+│   └── places.json      ← Tourist places database (40+ attractions)
 │
 ├──images/
 │    ├── all destination images
 |
 │
-├── app.py
-├── pdf_generator.py
+├── app.py                ← Streamlit frontend (4-tab dashboard)
+├── pdf_generator.py      ← PDF export module
 ├── requirements.txt
 └── README.md
 ```
